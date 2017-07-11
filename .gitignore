@@ -58,3 +58,4 @@ typings/
 .env
 
 # Webpack build
+build/
