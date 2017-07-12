@@ -2,15 +2,21 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 var config = {
-    entry: './src/main.js',
+    entry: './src/main.jsx',
     output: {
         path: path.resolve(__dirname, 'build'),
         filename: 'bundle.js'
     },
+    resolve: {
+        extensions: ['.js', '.jsx']
+    },
     module: {
         loaders: [{
-            test: /\.js$/,
-            loaders: ['babel-loader']
+            test: /\.js|jsx$/,
+            loader: 'babel-loader',
+            query: {
+                presets:['es2015', 'react']
+            }
         }]
     },
     plugins: []
