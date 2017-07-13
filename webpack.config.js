@@ -23,7 +23,6 @@ var config = {
 };
 
 config.plugins.push(new HtmlWebpackPlugin({
-    template: './src/index.html',
     inject: true,
     minify: {
         collapseWhitespace: true,
