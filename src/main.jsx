@@ -1,6 +1,7 @@
 'use strict';
-const React = require('react');
-const ReactDOM = require('react-dom');
+import React from 'react';
+import {render} from 'react-dom';
+import './css/life.css';
 
 class RootComponent extends React.Component {
 	render() {
@@ -10,4 +11,4 @@ class RootComponent extends React.Component {
 	}
 }
 
-ReactDOM.render(<RootComponent/>, document.querySelector('body'));
+render(<RootComponent/>, document.querySelector('#app'));
