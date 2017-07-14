@@ -11,22 +11,28 @@ var config = {
         extensions: ['.js', '.jsx']
     },
     module: {
-        loaders: [{
+        rules: [{
             test: /\.js|jsx$/,
-            loader: 'babel-loader',
-            query: {
-                presets:['es2015', 'react']
+            use: {
+                loader: 'babel-loader',
+                options: {
+                    presets:['es2015', 'react']
+                }
             }
+        }, {
+            test: /\.css$/,
+            use: ['style-loader', 'css-loader']
         }]
     },
     plugins: []
 };
 
 config.plugins.push(new HtmlWebpackPlugin({
+    template: './src/index.html',
     inject: true,
     minify: {
         collapseWhitespace: true,
-    },
+    }
 }));
 
 module.exports = config;
