@@ -21,7 +21,12 @@ var config = {
             }
         }, {
             test: /\.css$/,
-            use: ['style-loader', 'css-loader']
+            use: ['style-loader', {
+                    loader: 'css-loader',
+                    options: {
+                        module: true
+                    }
+                }]
         }, {
             test: /\.(png|woff|woff2|eot|ttf|svg)$/,
             use: ['url-loader?limit=100000']
