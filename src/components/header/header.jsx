@@ -8,7 +8,15 @@ export default class Header extends React.Component{
                     {this.props.children}
                 </div>
                 <div className="col-md-9">
-                    menu
+                    <nav>
+                        <ul>
+                            <li>Home</li>
+                            <li>About</li>
+                            <li>Life</li>
+                            <li>Work</li>
+                            <li>Contact</li> // donate & sponsor
+                        </ul>
+                    </nav>
                 </div>
             </div>
         );
