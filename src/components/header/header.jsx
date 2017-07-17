@@ -14,7 +14,7 @@ export default class Header extends React.Component{
                             <li>About</li>
                             <li>Life</li>
                             <li>Work</li>
-                            <li>Contact</li> // donate & sponsor
+                            <li>Contact</li> {/* donate & sponsor*/}
                         </ul>
                     </nav>
                 </div>
