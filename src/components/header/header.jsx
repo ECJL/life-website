@@ -1,13 +1,14 @@
 import React from 'react';
+import {Col} from 'react-bootstrap';
 
 export default class Header extends React.Component{
     render(){
         return (
             <div>
-                <div className="col-md-3">
+                <Col xs={12} md={3}>
                     {this.props.children}
-                </div>
-                <div className="col-md-9">
+                </Col>
+                <Col xs={12} md={9}>
                     <nav>
                         <ul>
                             <li>Home</li>
@@ -17,7 +18,7 @@ export default class Header extends React.Component{
                             <li>Contact</li> {/* donate & sponsor*/}
                         </ul>
                     </nav>
-                </div>
+                </Col>
             </div>
         );
     }
