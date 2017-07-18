@@ -21,6 +21,7 @@ var config = {
             }
         }, {
             test: /\.css$/,
+            exclude: /node_modules/,
             use: ['style-loader', {
                     loader: 'css-loader',
                     options: {
@@ -28,8 +29,14 @@ var config = {
                     }
                 }]
         }, {
+            // For all .css files in node_modules
+            test: /\.css$/,
+            include: /node_modules\/bootstrap/,
+            use: ['style-loader', 'css-loader']
+        }
+        , {
             test: /\.(png|woff|woff2|eot|ttf|svg)$/,
-            use: ['url-loader?limit=100000']
+            use: ['url-loader', 'file-loader']
         }]
     },
     plugins: []

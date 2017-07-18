@@ -3,7 +3,7 @@ import React from 'react';
 export default class Header extends React.Component{
     render(){
         return (
-            <div>
+            <div className="row">
                 <div className="col-md-3">
                     {this.props.children}
                 </div>
@@ -14,7 +14,7 @@ export default class Header extends React.Component{
                             <li>About</li>
                             <li>Life</li>
                             <li>Work</li>
-                            <li>Contact</li> // donate & sponsor
+                            <li>Contact</li> {/* donate & sponsor*/}
                         </ul>
                     </nav>
                 </div>
