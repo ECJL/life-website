@@ -21,7 +21,7 @@ var config = {
             }
         }, {
             test: /\.css$/,
-            exclude: /node_modules/,
+            exclude: path.join(__dirname, '/node_modules/'),
             use: ['style-loader', {
                     loader: 'css-loader',
                     options: {
@@ -31,7 +31,7 @@ var config = {
         }, {
             // For all .css files in node_modules
             test: /\.css$/,
-            include: /node_modules\/bootstrap/,
+            include: path.join(__dirname, '/node_modules/'),
             use: ['style-loader', 'css-loader']
         }
         , {
