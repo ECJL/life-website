@@ -10,11 +10,9 @@ export default class Header extends React.Component{
                 <div className="col-md-9">
                     <nav>
                         <ul>
-                            <li>Home</li>
-                            <li>About</li>
-                            <li>Life</li>
-                            <li>Work</li>
-                            <li>Contact</li> {/* donate & sponsor*/}
+                            {this.props.navItems.map( item =>
+                                <li key={item.name}>{item.name}</li>
+                            )}
                         </ul>
                     </nav>
                 </div>
