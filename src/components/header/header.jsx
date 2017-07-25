@@ -8,10 +8,12 @@ export default class Header extends React.Component{
                     {this.props.children}
                 </div>
                 <div className="col-md-9">
-                    <nav>
-                        <ul>
+                    <nav className="navbar pull-right">
+                        <ul className="nav navbar-nav">
                             {this.props.navItems.map( item =>
-                                <li key={item.name}>{item.name}</li>
+                                <li key={item.name}>
+                                    <a href="#">{item.name}</a>
+                                </li>
                             )}
                         </ul>
                     </nav>
