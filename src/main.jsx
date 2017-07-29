@@ -9,8 +9,8 @@ import Footer from './components/footer/footer.jsx'
 
 
 class RootComponent extends React.Component {
-
 	render() {
+		let currSection = 'Home';
 		return (
 			<div>
                 <Header navItems={navItems}>Ellis &amp; Jen</Header>
