@@ -1,7 +1,8 @@
 import { CHANGE_SECTION } from './action';
-import {navItems} from '../utils/constants'
+import {navItems} from '../utils/constants';
+import {combineReducers} from 'redux';
 
-function currentSection(state = navItems[0].name, action) {
+function currSectionName(state = navItems[0].name, action) {
     switch (action.type) {
         case CHANGE_SECTION:
             return action.currSectionName;
@@ -10,4 +11,6 @@ function currentSection(state = navItems[0].name, action) {
     }
 }
 
-export default currentSection;
+export default combineReducers({
+    currSectionName
+});

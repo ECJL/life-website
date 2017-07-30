@@ -12,7 +12,7 @@ const mapStateToNavItemProps = (state, ownProps) => {
 const mapDispatchToNavItemProps = (dispatch, ownProps) => {
   return {
     onClick: () => {
-      dispatch(changeSection(ownProps.itemName))
+      dispatch(changeSection(ownProps.itemName));
     }
   }
 }
