@@ -6,6 +6,6 @@ export const CHANGE_SECTION = 'CHANGE_SECTION';
 /*
  * action creators
  */
-export function changeSection(sectionName) {
-    return { type: CHANGE_SECTION, sectionName };
+export function changeSection(currSectionName) {
+    return { type: CHANGE_SECTION, currSectionName };
 }

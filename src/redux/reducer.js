@@ -4,7 +4,7 @@ import {navItems} from '../utils/constants'
 function currentSection(state = navItems[0].name, action) {
     switch (action.type) {
         case CHANGE_SECTION:
-            return action.sectionName;
+            return action.currSectionName;
         default:
             return state;
     }

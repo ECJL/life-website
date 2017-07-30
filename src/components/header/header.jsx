@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './header.css';
+import NavItemContainer from '../../redux/containers/nav-item-container';
 
 export default class Header extends React.Component{
     render(){
@@ -12,9 +13,7 @@ export default class Header extends React.Component{
                     <nav className={`navbar pull-right ${styles.navBar}`}>
                         <ul className="nav navbar-nav">
                             {this.props.navItems.map( item =>
-                                <li key={item.name}>
-                                    <a href="#">{item.name}</a>
-                                </li>
+                                <NavItemContainer key={item.name} itemName={item.name}></NavItemContainer>
                             )}
                         </ul>
                     </nav>

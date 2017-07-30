@@ -15,7 +15,6 @@ let store = createStore(reducer);
 
 class RootComponent extends React.Component {
 	render() {
-		let currSection = 'Home';
 		return (
 			<Provider store={store}>
                 <div>
