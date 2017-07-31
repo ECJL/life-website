@@ -1,10 +1,11 @@
 import React from 'react';
+import styles from './header.css';
 import classNames from 'classnames';
 
 export default class NavItem extends React.Component{
 	render(){
     	var navItemLiClasses = classNames(
-    		{active:this.props.active}
+    		{[styles.active]: this.props.active}
     	);
 
         return (
