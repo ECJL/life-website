@@ -1,12 +1,17 @@
 .hero{
 	font-size: 2em;
 	padding-top: 0.25em;
+	color: #5D576B;
 }
 
 .navBar{
 	margin-bottom: 0;
 }
 
-li.active a{
-	color: red !important;
-}
+/*
+#FCFCFC
+#F7567C
+#FFFAE3
+#99E1D9
+#5D576B
+*/
