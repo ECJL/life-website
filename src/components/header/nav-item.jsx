@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './header.css';
+import styles from './nav-item.css';
 import classNames from 'classnames';
 
 export default class NavItem extends React.Component{
@@ -11,7 +11,7 @@ export default class NavItem extends React.Component{
         return (
         	<li className={navItemLiClasses}>
                 <a onClick={this.props.onClick} href={`#${this.props.itemName}`}>
-                    {this.props.itemName} {this.props.active?'*':''}</a>
+                    {this.props.itemName}</a>
             </li>
         );
     }
