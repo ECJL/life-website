@@ -40,7 +40,7 @@
     "webpack-dev-server": "^2.5.1"
   },
   "dependencies": {
-    "bootstrap": "^3.3.7",
+    "bootstrap": "^3.4.1",
     "react": "^15.6.1",
     "react-dom": "^15.6.1"
   }
